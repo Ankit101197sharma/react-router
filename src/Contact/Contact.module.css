@@ -1,0 +1,9 @@
+.contactClass{
+    width: 100%;
+    height: 300px;
+    background: #ccdf95;
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
