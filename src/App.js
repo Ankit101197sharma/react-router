@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import './Home.css';
 import About from './About/About';
 import Menu from './Menu/Menu';
@@ -7,6 +8,7 @@ import Contact from './Contact/Contact';
 import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import "../node_modules/antd/dist/antd.css"
 import Signin from './Signin/Signin';
+import User from './User/User';
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +21,7 @@ function App() {
        <Route path="/" exact element={<Home/> } />
        <Route path="about" element={<About/>} />
        <Route path="contact" element={<Contact/>} />
+       <Route path="user/:id" element={<User/>} />
        <Route path="signin" element={<Signin/>} />
 
        

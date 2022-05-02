@@ -1,9 +1,12 @@
 import React from 'react'
 import classes from "./Contact.module.css";
-import { DatePicker,Space, Pagination, Button } from 'antd';
+import { DatePicker,Space, Pagination} from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 const Contact=()=> {
  
+  const navigate = useNavigate();
+  console.log(navigate)
 function onChange(date, dateString) {
   console.log(date, dateString);
 }
@@ -24,10 +27,10 @@ function onChange(date, dateString) {
 
 <Pagination style={{margin:'20px'}} defaultCurrent={1} total={50} /> <br />
 
-<Button type="primary" >
-          Primary
-        </Button>
-        
+
+<button type="button" class="btn btn-primary" onClick={() => navigate(-1)}>
+        Go Back
+      </button>
     </div>
     
   )
